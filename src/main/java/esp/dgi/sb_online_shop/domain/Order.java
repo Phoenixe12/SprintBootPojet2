@@ -27,9 +27,9 @@ public class Order {
 
   public Order(Customer customer) {
     this.total = total;
+    this.customer = customer;
     this.createdAt = LocalDateTime.now();
     this.updatedAt = LocalDateTime.now();
-    this.customer = customer;
   }
 
   public double getTotal() {
@@ -40,10 +40,7 @@ public class Order {
     return total;
   }
 
-  /*
-  public void setTotal(double total) {
-    this.total = total;
-  }*/
+
 
   public Long getId() {
     return id;

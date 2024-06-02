@@ -93,8 +93,6 @@ public class Item {
       "id=" + id +
       ", quantity=" + quantity +
       ", price=" + price +
-      ", createdAt=" + createdAt +
-      ", updatedAt=" + updatedAt +
       ", order=" + order +
       ", product=" + product +
       '}';

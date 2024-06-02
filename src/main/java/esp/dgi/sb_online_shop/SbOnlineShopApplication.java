@@ -83,7 +83,7 @@ public SbOnlineShopApplication(
 		for (Order o : orderRepository.findAll()) {
 			System.out.println("Customer: " + o.getCustomer().getFullname() + ": Order " + o.getId() + ": Total: " + o.getTotal() + "$");
 			for (Item item : o.getItems()) {
-				System.out.println("\tItem: " + item.getQuantity() + " x " + item.getProduct().getName() + " (" + item.getProduct().getPrice() + "$)");
+				System.out.println("\t { Item: " + item.getQuantity() + " : [" + item.getProduct().getName() + " : " + item.getProduct().getPrice() + "$])}");
 			}
 		}
 		System.out.println("-----             ------");
