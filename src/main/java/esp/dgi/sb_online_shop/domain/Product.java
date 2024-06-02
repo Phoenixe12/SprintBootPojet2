@@ -3,7 +3,6 @@ package esp.dgi.sb_online_shop.domain;
 
 import java.time.LocalDateTime;
 import java.util.List;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;

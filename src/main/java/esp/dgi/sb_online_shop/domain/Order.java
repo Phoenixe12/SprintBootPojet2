@@ -24,7 +24,7 @@ public class Order {
   private LocalDateTime updatedAt;
 
   @ManyToOne(fetch = FetchType.EAGER)
-  @JoinColumn(name = "customer_id")
+  @JoinColumn(name = "idCustomer")
   private Customer customer;
 
   @OneToMany(fetch = FetchType.EAGER, mappedBy = "order", cascade = CascadeType.ALL)
